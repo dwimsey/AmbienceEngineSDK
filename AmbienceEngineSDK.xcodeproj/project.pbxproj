@@ -1,0 +1,203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C8CD1F7413C1977B0069DB09 /* SDKDistributable */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C8CD1F7513C1977B0069DB09 /* Build configuration list for PBXAggregateTarget "SDKDistributable" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SDKDistributable;
+			productName = SDKDistributable;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		C8CD1FD013C197C30069DB09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8CD1F8313C197C10069DB09;
+			remoteInfo = APEEditor;
+		};
+		C8CD1FD213C197C30069DB09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8CD1FB213C197C20069DB09;
+			remoteInfo = APEEditorTests;
+		};
+		C8D2F3B113C198B6003E8290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8D2F3A913C198B5003E8290 /* AmbienceEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8BD286A13C01399007615A5;
+			remoteInfo = AmbienceEngine;
+		};
+		C8D2F3B313C198B6003E8290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8D2F3A913C198B5003E8290 /* AmbienceEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8BD287713C01399007615A5;
+			remoteInfo = AmbienceEngineTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APEEditor.xcodeproj; path = APEEditor/APEEditor.xcodeproj; sourceTree = "<group>"; };
+		C8D2F3A913C198B5003E8290 /* AmbienceEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AmbienceEngine.xcodeproj; path = AmbienceEngine/AmbienceEngine.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C83262DE13C194B70055B8B6 = {
+			isa = PBXGroup;
+			children = (
+				C8D2F3A913C198B5003E8290 /* AmbienceEngine.xcodeproj */,
+				C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		C8CD1FCC13C197C20069DB09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8CD1FD113C197C30069DB09 /* APEEditor.app */,
+				C8CD1FD313C197C30069DB09 /* APEEditorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8D2F3AA13C198B5003E8290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8D2F3B213C198B6003E8290 /* libAmbienceEngine.a */,
+				C8D2F3B413C198B6003E8290 /* AmbienceEngineTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C83262E013C194B70055B8B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Research Triangle Software, Inc.";
+			};
+			buildConfigurationList = C83262E313C194B70055B8B6 /* Build configuration list for PBXProject "AmbienceEngineSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C83262DE13C194B70055B8B6;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C8D2F3AA13C198B5003E8290 /* Products */;
+					ProjectRef = C8D2F3A913C198B5003E8290 /* AmbienceEngine.xcodeproj */;
+				},
+				{
+					ProductGroup = C8CD1FCC13C197C20069DB09 /* Products */;
+					ProjectRef = C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C8CD1F7413C1977B0069DB09 /* SDKDistributable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C8CD1FD113C197C30069DB09 /* APEEditor.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = APEEditor.app;
+			remoteRef = C8CD1FD013C197C30069DB09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C8CD1FD313C197C30069DB09 /* APEEditorTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APEEditorTests.octest;
+			remoteRef = C8CD1FD213C197C30069DB09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C8D2F3B213C198B6003E8290 /* libAmbienceEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAmbienceEngine.a;
+			remoteRef = C8D2F3B113C198B6003E8290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C8D2F3B413C198B6003E8290 /* AmbienceEngineTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AmbienceEngineTests.octest;
+			remoteRef = C8D2F3B313C198B6003E8290 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		C83262E513C194B70055B8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		C83262E613C194B70055B8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		C8CD1F7613C1977B0069DB09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8CD1F7713C1977B0069DB09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C83262E313C194B70055B8B6 /* Build configuration list for PBXProject "AmbienceEngineSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83262E513C194B70055B8B6 /* Debug */,
+				C83262E613C194B70055B8B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8CD1F7513C1977B0069DB09 /* Build configuration list for PBXAggregateTarget "SDKDistributable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8CD1F7613C1977B0069DB09 /* Debug */,
+				C8CD1F7713C1977B0069DB09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C83262E013C194B70055B8B6 /* Project object */;
+}
