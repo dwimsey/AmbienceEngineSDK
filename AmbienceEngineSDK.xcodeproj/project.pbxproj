@@ -20,56 +20,56 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXContainerItemProxy section */
-		C86DE8BA13C6B68C00F5C7B0 /* PBXContainerItemProxy */ = {
+		C838383014D7442D00FA3FA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C86DE8B613C6B68A00F5C7B0 /* APEExplorer.xcodeproj */;
+			containerPortal = C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C86DE89213C6B68A00F5C7B0;
-			remoteInfo = APEExplorer;
+			remoteInfo = AEPlayerApp;
 		};
-		C8CD1FD013C197C30069DB09 /* PBXContainerItemProxy */ = {
+		C838383C14D7442D00FA3FA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */;
+			containerPortal = C8CD1FCB13C197C20069DB09 /* iAEPlayer.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C8CD1F8313C197C10069DB09;
-			remoteInfo = APEEditor;
+			remoteInfo = iAEPlayer;
 		};
-		C8CD1FD213C197C30069DB09 /* PBXContainerItemProxy */ = {
+		C838383E14D7442D00FA3FA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */;
+			containerPortal = C8CD1FCB13C197C20069DB09 /* iAEPlayer.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C8CD1FB213C197C20069DB09;
-			remoteInfo = APEEditorTests;
+			remoteInfo = iAEPlayerTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C86DE8B613C6B68A00F5C7B0 /* APEExplorer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APEExplorer.xcodeproj; path = APEExplorer/APEExplorer.xcodeproj; sourceTree = "<group>"; };
-		C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APEEditor.xcodeproj; path = APEEditor/APEEditor.xcodeproj; sourceTree = "<group>"; };
+		C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEPlayerApp.xcodeproj; path = AEPlayerApp/AEPlayerApp.xcodeproj; sourceTree = "<group>"; };
+		C8CD1FCB13C197C20069DB09 /* iAEPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iAEPlayer.xcodeproj; path = iAEPlayer/iAEPlayer.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		C83262DE13C194B70055B8B6 = {
 			isa = PBXGroup;
 			children = (
-				C86DE8B613C6B68A00F5C7B0 /* APEExplorer.xcodeproj */,
-				C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */,
+				C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */,
+				C8CD1FCB13C197C20069DB09 /* iAEPlayer.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
-		C86DE8B713C6B68A00F5C7B0 /* Products */ = {
+		C838382D14D7442D00FA3FA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C86DE8BB13C6B68C00F5C7B0 /* APEExplorer.app */,
+				C838383114D7442D00FA3FA6 /* AEPlayerApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C8CD1FCC13C197C20069DB09 /* Products */ = {
+		C838383814D7442D00FA3FA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8CD1FD113C197C30069DB09 /* APEEditor.app */,
-				C8CD1FD313C197C30069DB09 /* APEEditorTests.octest */,
+				C838383D14D7442D00FA3FA6 /* iAEPlayer.app */,
+				C838383F14D7442D00FA3FA6 /* iAEPlayerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,12 +94,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C8CD1FCC13C197C20069DB09 /* Products */;
-					ProjectRef = C8CD1FCB13C197C20069DB09 /* APEEditor.xcodeproj */;
+					ProductGroup = C838382D14D7442D00FA3FA6 /* Products */;
+					ProjectRef = C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */;
 				},
 				{
-					ProductGroup = C86DE8B713C6B68A00F5C7B0 /* Products */;
-					ProjectRef = C86DE8B613C6B68A00F5C7B0 /* APEExplorer.xcodeproj */;
+					ProductGroup = C838383814D7442D00FA3FA6 /* Products */;
+					ProjectRef = C8CD1FCB13C197C20069DB09 /* iAEPlayer.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -110,25 +110,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C86DE8BB13C6B68C00F5C7B0 /* APEExplorer.app */ = {
+		C838383114D7442D00FA3FA6 /* AEPlayerApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = APEExplorer.app;
-			remoteRef = C86DE8BA13C6B68C00F5C7B0 /* PBXContainerItemProxy */;
+			path = AEPlayerApp.app;
+			remoteRef = C838383014D7442D00FA3FA6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C8CD1FD113C197C30069DB09 /* APEEditor.app */ = {
+		C838383D14D7442D00FA3FA6 /* iAEPlayer.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = APEEditor.app;
-			remoteRef = C8CD1FD013C197C30069DB09 /* PBXContainerItemProxy */;
+			path = iAEPlayer.app;
+			remoteRef = C838383C14D7442D00FA3FA6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C8CD1FD313C197C30069DB09 /* APEEditorTests.octest */ = {
+		C838383F14D7442D00FA3FA6 /* iAEPlayerTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = APEEditorTests.octest;
-			remoteRef = C8CD1FD213C197C30069DB09 /* PBXContainerItemProxy */;
+			path = iAEPlayerTests.octest;
+			remoteRef = C838383E14D7442D00FA3FA6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
