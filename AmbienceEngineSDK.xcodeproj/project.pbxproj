@@ -41,17 +41,26 @@
 			remoteGlobalIDString = C8CD1FB213C197C20069DB09;
 			remoteInfo = iAEPlayerTests;
 		};
+		C8E09AF314D76C2700A905E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8E09AEF14D76C2600A905E9 /* AEExtensionStub.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8E09ADF14D76C2600A905E9;
+			remoteInfo = AEExtensionStub;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEPlayerApp.xcodeproj; path = AEPlayerApp/AEPlayerApp.xcodeproj; sourceTree = "<group>"; };
 		C8CD1FCB13C197C20069DB09 /* iAEPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iAEPlayer.xcodeproj; path = iAEPlayer/iAEPlayer.xcodeproj; sourceTree = "<group>"; };
+		C8E09AEF14D76C2600A905E9 /* AEExtensionStub.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEExtensionStub.xcodeproj; path = AEExtensionStub/AEExtensionStub.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		C83262DE13C194B70055B8B6 = {
 			isa = PBXGroup;
 			children = (
+				C8E09AEF14D76C2600A905E9 /* AEExtensionStub.xcodeproj */,
 				C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */,
 				C8CD1FCB13C197C20069DB09 /* iAEPlayer.xcodeproj */,
 			);
@@ -70,6 +79,14 @@
 			children = (
 				C838383D14D7442D00FA3FA6 /* iAEPlayer.app */,
 				C838383F14D7442D00FA3FA6 /* iAEPlayerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8E09AF014D76C2600A905E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8E09AF414D76C2700A905E9 /* libAEExtensionStub.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +110,10 @@
 			mainGroup = C83262DE13C194B70055B8B6;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = C8E09AF014D76C2600A905E9 /* Products */;
+					ProjectRef = C8E09AEF14D76C2600A905E9 /* AEExtensionStub.xcodeproj */;
+				},
 				{
 					ProductGroup = C838382D14D7442D00FA3FA6 /* Products */;
 					ProjectRef = C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */;
@@ -129,6 +150,13 @@
 			fileType = wrapper.cfbundle;
 			path = iAEPlayerTests.octest;
 			remoteRef = C838383E14D7442D00FA3FA6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C8E09AF414D76C2700A905E9 /* libAEExtensionStub.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAEExtensionStub.a;
+			remoteRef = C8E09AF314D76C2700A905E9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
