@@ -20,6 +20,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXContainerItemProxy section */
+		C801E8BC14D8CE93001D34E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8E09AEF14D76C2600A905E9 /* AEExtensionStub.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C811704014D7909F005E2268;
+			remoteInfo = CosmicImpact;
+		};
 		C838383014D7442D00FA3FA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C86DE8B613C6B68A00F5C7B0 /* AEPlayerApp.xcodeproj */;
@@ -86,7 +93,8 @@
 		C8E09AF014D76C2600A905E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8E09AF414D76C2700A905E9 /* libAEExtensionStub.a */,
+				C8E09AF414D76C2700A905E9 /* libiCosmicImpact.a */,
+				C801E8BD14D8CE93001D34E2 /* libCosmicImpact.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +139,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		C801E8BD14D8CE93001D34E2 /* libCosmicImpact.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libCosmicImpact.dylib;
+			remoteRef = C801E8BC14D8CE93001D34E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C838383114D7442D00FA3FA6 /* AEPlayerApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
@@ -152,10 +167,10 @@
 			remoteRef = C838383E14D7442D00FA3FA6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C8E09AF414D76C2700A905E9 /* libAEExtensionStub.a */ = {
+		C8E09AF414D76C2700A905E9 /* libiCosmicImpact.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libAEExtensionStub.a;
+			path = libiCosmicImpact.a;
 			remoteRef = C8E09AF314D76C2700A905E9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
