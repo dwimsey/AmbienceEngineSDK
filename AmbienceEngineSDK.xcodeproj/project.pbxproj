@@ -93,8 +93,8 @@
 		C8E09AF014D76C2600A905E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8E09AF414D76C2700A905E9 /* libiCosmicImpact.a */,
 				C801E8BD14D8CE93001D34E2 /* libCosmicImpact.dylib */,
+				C8E09AF414D76C2700A905E9 /* libiCosmicImpact.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
