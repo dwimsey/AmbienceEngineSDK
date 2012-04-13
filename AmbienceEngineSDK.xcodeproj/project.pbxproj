@@ -106,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "Research Triangle Software, Inc.";
+				ORGANIZATIONNAME = NotResponsible.Org.;
 			};
 			buildConfigurationList = C83262E313C194B70055B8B6 /* Build configuration list for PBXProject "AmbienceEngineSDK" */;
 			compatibilityVersion = "Xcode 3.2";
