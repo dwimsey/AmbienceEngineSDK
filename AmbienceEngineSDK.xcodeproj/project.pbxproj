@@ -149,7 +149,6 @@
 		C838383114D7442D00FA3FA6 /* AEPlayerApp.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			name = AEPlayerApp.app;
 			path = "Cosmic Impact.app";
 			remoteRef = C838383014D7442D00FA3FA6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
