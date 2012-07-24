@@ -76,7 +76,7 @@
 		C838382D14D7442D00FA3FA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C838383114D7442D00FA3FA6 /* AEPlayerApp.app */,
+				C838383114D7442D00FA3FA6 /* Cosmic Impact.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 			remoteRef = C801E8BC14D8CE93001D34E2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C838383114D7442D00FA3FA6 /* AEPlayerApp.app */ = {
+		C838383114D7442D00FA3FA6 /* Cosmic Impact.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = "Cosmic Impact.app";
