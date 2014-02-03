@@ -1,0 +1,47 @@
+<rml>
+	<head>
+		<link type="text/rcss" href="../style.rcss"/>
+		<style>
+body
+{
+	font-family: Acknowledgement;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 15;
+	color: white;
+	height: 100%;
+}
+
+div#loader
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: #70A0CF;
+}
+
+div#topbg
+{
+	display: block;
+	height: 60%;
+	width: 100%;
+	background-color: #A0D0FF;
+}
+
+div#status
+{
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 36;
+}
+		</style>
+	</head>
+	<body class="loader">
+		<div id="loader">
+			<div id="topbg">
+			</div>
+			<div id="status">
+			</div>
+		</div>
+	</body>
+</rml>

@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C89D3AF7189F379D003707E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D3AF6189F379D003707E9 /* Cocoa.framework */; };
+		C89D3AF9189F37A5003707E9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D3AF8189F37A5003707E9 /* OpenGL.framework */; };
+		C89D3AFB189F37AF003707E9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D3AFA189F37AF003707E9 /* OpenAL.framework */; };
+		C89D3AFD189F37B8003707E9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D3AFC189F37B8003707E9 /* AVFoundation.framework */; };
+		C89D3AFF189F3804003707E9 /* libAmbienceEngine.so in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D3AFE189F3804003707E9 /* libAmbienceEngine.so */; };
+		D811704A14D79A18005E2268 /* AEDebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D811704914D79A18005E2268 /* AEDebugger.cpp */; };
+		D811704C14D79A2E005E2268 /* AEDebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D811704914D79A18005E2268 /* AEDebugger.cpp */; };
+		D811704E14D79DAA005E2268 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D811704D14D79DAA005E2268 /* OpenGLES.framework */; };
+		D8E09AE314D76C2600A905E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E09AE214D76C2600A905E9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		D8BB3C3015D39472004F5FB6 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.svg";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.png",
+				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}@2x.png",
+			);
+			script = "#!/bin/sh\njava -jar $PROJECT_DIR/../../AmbienceEngine/depends/dgs4cl/dgs4cl.jar -l \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.png\"\njava -jar $PROJECT_DIR/../../AmbienceEngine/depends/dgs4cl/dgs4cl.jar -l \"${INPUT_FILE_PATH}\" \"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}@2x.png\"\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		C89D3AEE189F1760003707E9 /* libAmbienceEngine.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAmbienceEngine.so; path = ../../AmbienceEngine/build/Debug/libAmbienceEngine.so; sourceTree = "<group>"; };
+		C89D3AF6189F379D003707E9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C89D3AF8189F37A5003707E9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		C89D3AFA189F37AF003707E9 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
+		C89D3AFC189F37B8003707E9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C89D3AFE189F3804003707E9 /* libAmbienceEngine.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAmbienceEngine.so; path = ../../AmbienceEngine/build/Debug/libAmbienceEngine.so; sourceTree = "<group>"; };
+		D811704014D7909F005E2268 /* AEDebugger.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AEDebugger.so; sourceTree = BUILT_PRODUCTS_DIR; };
+		D811704914D79A18005E2268 /* AEDebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AEDebugger.cpp; sourceTree = "<group>"; };
+		D811704D14D79DAA005E2268 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D811705114D79DD1005E2268 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		D81D5E8714EA1ABC00E5BFE0 /* libAmbienceEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAmbienceEngine.a; path = ../../AmbienceEngine/build/Release/libAmbienceEngine.a; sourceTree = "<group>"; };
+		D81D5E8A14EA1CDF00E5BFE0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = SDKs/MacOSX10.7.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
+		D81D5E8C14EA1D3900E5BFE0 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AGL.framework; sourceTree = DEVELOPER_DIR; };
+		D81D5E9114EA1E0C00E5BFE0 /* libAmbienceEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAmbienceEngine.a; path = ../../AmbienceEngine/build/Release/libAmbienceEngine.a; sourceTree = "<group>"; };
+		D81D5E9314EA1E1700E5BFE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		D877675E1538161700B32236 /* AEDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDebugger.h; sourceTree = "<group>"; };
+		D8BB3C2E15D38C72004F5FB6 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = AEDebugger/Resources; sourceTree = "<group>"; };
+		D8D78B76183A99C6006E1543 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		D8E09ADF14D76C2600A905E9 /* libiAEDebugger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiAEDebugger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E09AE214D76C2600A905E9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8E09AE614D76C2600A905E9 /* AEDebugger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AEDebugger-Prefix.pch"; sourceTree = "<group>"; };
+		D8E772BE16B7E8970004E004 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib/libbz2.dylib; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D811703D14D7909F005E2268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89D3AFF189F3804003707E9 /* libAmbienceEngine.so in Frameworks */,
+				C89D3AFD189F37B8003707E9 /* AVFoundation.framework in Frameworks */,
+				C89D3AFB189F37AF003707E9 /* OpenAL.framework in Frameworks */,
+				C89D3AF9189F37A5003707E9 /* OpenGL.framework in Frameworks */,
+				C89D3AF7189F379D003707E9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E09ADC14D76C2600A905E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D811704E14D79DAA005E2268 /* OpenGLES.framework in Frameworks */,
+				D8E09AE314D76C2600A905E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8E09AD414D76C2600A905E9 = {
+			isa = PBXGroup;
+			children = (
+				D8E772BE16B7E8970004E004 /* libbz2.dylib */,
+				D8BB3C2E15D38C72004F5FB6 /* Resources */,
+				D8E09AE414D76C2600A905E9 /* AEDebugger */,
+				D8E09AE114D76C2600A905E9 /* Frameworks */,
+				D8E09AE014D76C2600A905E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8E09AE014D76C2600A905E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8E09ADF14D76C2600A905E9 /* libiAEDebugger.a */,
+				D811704014D7909F005E2268 /* AEDebugger.so */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8E09AE114D76C2600A905E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C89D3AFE189F3804003707E9 /* libAmbienceEngine.so */,
+				C89D3AFC189F37B8003707E9 /* AVFoundation.framework */,
+				C89D3AFA189F37AF003707E9 /* OpenAL.framework */,
+				C89D3AF8189F37A5003707E9 /* OpenGL.framework */,
+				C89D3AF6189F379D003707E9 /* Cocoa.framework */,
+				C89D3AEE189F1760003707E9 /* libAmbienceEngine.so */,
+				D8D78B76183A99C6006E1543 /* libz.dylib */,
+				D81D5E9314EA1E1700E5BFE0 /* Cocoa.framework */,
+				D811704D14D79DAA005E2268 /* OpenGLES.framework */,
+				D81D5E9114EA1E0C00E5BFE0 /* libAmbienceEngine.a */,
+				D81D5E8C14EA1D3900E5BFE0 /* AGL.framework */,
+				D81D5E8A14EA1CDF00E5BFE0 /* libxml2.dylib */,
+				D81D5E8714EA1ABC00E5BFE0 /* libAmbienceEngine.a */,
+				D811705114D79DD1005E2268 /* OpenGL.framework */,
+				D8E09AE214D76C2600A905E9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8E09AE414D76C2600A905E9 /* AEDebugger */ = {
+			isa = PBXGroup;
+			children = (
+				D8E09AE514D76C2600A905E9 /* Supporting Files */,
+				D811704914D79A18005E2268 /* AEDebugger.cpp */,
+				D877675E1538161700B32236 /* AEDebugger.h */,
+			);
+			path = AEDebugger;
+			sourceTree = "<group>";
+		};
+		D8E09AE514D76C2600A905E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8E09AE614D76C2600A905E9 /* AEDebugger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D811703E14D7909F005E2268 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E09ADD14D76C2600A905E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D811703F14D7909F005E2268 /* AEDebugger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D811704114D7909F005E2268 /* Build configuration list for PBXNativeTarget "AEDebugger" */;
+			buildPhases = (
+				D811703C14D7909F005E2268 /* Sources */,
+				D811703D14D7909F005E2268 /* Frameworks */,
+				D811703E14D7909F005E2268 /* Headers */,
+			);
+			buildRules = (
+				D8BB3C3015D39472004F5FB6 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = AEDebugger;
+			productName = AEDebugger;
+			productReference = D811704014D7909F005E2268 /* AEDebugger.so */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D8E09ADE14D76C2600A905E9 /* iAEDebugger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8E09AEC14D76C2600A905E9 /* Build configuration list for PBXNativeTarget "iAEDebugger" */;
+			buildPhases = (
+				D8E09ADB14D76C2600A905E9 /* Sources */,
+				D8E09ADC14D76C2600A905E9 /* Frameworks */,
+				D8E09ADD14D76C2600A905E9 /* Headers */,
+				D86C3CE714DB603400D25116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iAEDebugger;
+			productName = AEDebugger;
+			productReference = D8E09ADF14D76C2600A905E9 /* libiAEDebugger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8E09AD614D76C2600A905E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = D8E09AD914D76C2600A905E9 /* Build configuration list for PBXProject "AEDebugger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8E09AD414D76C2600A905E9;
+			productRefGroup = D8E09AE014D76C2600A905E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D811703F14D7909F005E2268 /* AEDebugger */,
+				D8E09ADE14D76C2600A905E9 /* iAEDebugger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D86C3CE714DB603400D25116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D811703C14D7909F005E2268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D811704C14D79A2E005E2268 /* AEDebugger.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E09ADB14D76C2600A905E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D811704A14D79A18005E2268 /* AEDebugger.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D811704214D7909F005E2268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AMBIENCEENGINE_PLATFORM_OSX,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INSTALL_PATH = "@loader_path/../Resources/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dwimsey/Documents/Projects/AmbienceEngineSDK/AmbienceEngine/build/Debug,
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D811704314D7909F005E2268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_EXTENSION = so;
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = AMBIENCEENGINE_PLATFORM_OSX;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INSTALL_PATH = "@loader_path/../Resources/";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dwimsey/Documents/Projects/AmbienceEngineSDK/AmbienceEngine/build/Debug,
+				);
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D8E09AEA14D76C2600A905E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../AmbienceEngine/AmbienceEngine/depends/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../AmbienceEngine/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"$(SRCROOT)/../../AmbienceEngine/AmbienceEngine/depends/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib",
+				);
+				OTHER_LDFLAGS = "$(SRCROOT)/../../AmbienceEngine/AmbienceEngine/depends/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8E09AEB14D76C2600A905E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../AmbienceEngine/AmbienceEngine/depends/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../AmbienceEngine/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"$(SRCROOT)/../../AmbienceEngine/AmbienceEngine/depends/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib",
+				);
+				OTHER_LDFLAGS = "$(SRCROOT)/../../AmbienceEngine/AmbienceEngine/depends/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/lib";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8E09AED14D76C2600A905E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				DSTROOT = /tmp/iAEDebugger.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AEDebugger/AEDebugger-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					AMBIENCEENGINE_PLATFORM_IOS,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8E09AEE14D76C2600A905E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				DSTROOT = /tmp/iAEDebugger.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AEDebugger/AEDebugger-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = AMBIENCEENGINE_PLATFORM_IOS;
+				GCC_THUMB_SUPPORT = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D811704114D7909F005E2268 /* Build configuration list for PBXNativeTarget "AEDebugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D811704214D7909F005E2268 /* Debug */,
+				D811704314D7909F005E2268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E09AD914D76C2600A905E9 /* Build configuration list for PBXProject "AEDebugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E09AEA14D76C2600A905E9 /* Debug */,
+				D8E09AEB14D76C2600A905E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8E09AEC14D76C2600A905E9 /* Build configuration list for PBXNativeTarget "iAEDebugger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8E09AED14D76C2600A905E9 /* Debug */,
+				D8E09AEE14D76C2600A905E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8E09AD614D76C2600A905E9 /* Project object */;
+}

@@ -1,0 +1,170 @@
+body
+{
+	font-family: Averia;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 15;
+	color: white;
+}
+
+div
+{
+	display: block;
+}
+
+p
+{
+	display: block;
+}
+
+h1
+{
+	display: block;
+}
+
+em
+{
+	font-style: italic;
+}
+
+strong
+{
+	font-weight: bold;
+}
+
+datagrid
+{
+	display: block;
+}
+
+select, dataselect, datacombo
+{
+	text-align: left;
+}
+
+tabset tabs
+{
+	display: block;
+}
+
+div.header
+{
+	font-size: 36;
+}
+
+div#panel
+{
+	width: auto;
+
+	background-decorator: tiled-box;
+	background-top-left-image: cigui.png 3px 3px 133px 140px;
+	background-top-right-image: cigui.png 136px 3px 143px 140px;
+	background-top-image: cigui.png stretch 134px 3px 135px 140px;
+	background-bottom-left-image: cigui.png 3px 140px 11px 147px;
+	background-bottom-right-image: cigui.png 136px 140px 143px 147px;
+	background-bottom-image: cigui.png stretch 11px 140px 12px 147px;
+	background-left-image: cigui.png stretch 3px 139px 10px 140px;
+	background-right-image: cigui.png stretch 136px 139px 143px 140px;
+	background-center-image: cigui.png stretch 11px 139px 12px 140px;
+}
+
+div#content
+{
+}
+
+input,
+select,
+dataselect
+{
+	margin-left: 20px;
+}
+
+input.submit
+{
+	margin-left: 0px;
+}
+
+
+button.btnplus
+{
+	width: 18px;
+	height: 18px;
+	background-decorator: image;
+	background-image: cigui.png 2px 250px 20px 268px;
+	padding-top: 0px;
+	vertical-align: 0px;
+}
+
+button.btnplus:hover
+{
+	background-image-s: 21px 39px;
+	background-image-t: 250px 268px;
+}
+
+button.btnplus:active
+{
+	background-image-s: 40px 58px;
+	background-image-t: 250px 268px;
+}
+
+button.btnminus
+{
+	width: 18px;
+	height: 18px;
+	background-decorator: image;
+	background-image: cigui.png 2px 232px 20px 250px;
+	padding-top: 0px;
+	vertical-align: 0px;
+}
+
+button.btnminus:hover
+{
+	background-image-s: 21px 39px;
+	background-image-t: 232px 250px;
+}
+
+button.btnminus:active
+{
+	background-image-s: 40px 58px;
+	background-image-t: 232px 250px;
+}
+
+button,
+input.submit
+{
+	display: inline-block;
+
+	width: 159px;
+	height: 37px;
+
+	padding-top: 12px;
+	vertical-align: -18px;
+
+	font-size: 18;
+	text-align: center;
+	tab-index: auto;
+
+	background-decorator: image;
+	background-image: cigui.png 253px 52px 400px 82px;
+}
+
+input.submit:focus
+{
+    font-weight: bold;
+    
+    shadow-font-effect: shadow;
+    shadow-offset: 1px 1px;
+    shadow-color: black;
+}
+
+button:hover,
+input.submit:hover
+{
+	background-image-t: 90px 135px;
+}
+
+button:active,
+input.submit:active
+{
+	background-image-t: 0px 45px;
+}

@@ -1,0 +1,11 @@
+<template name="panel" content="content">
+<head>
+	<link type="text/rcss" href="style.rcss"/>
+</head>
+<body class="panel">
+	<div id="panel">
+		<div id="content">
+		</div>
+	</div>
+</body>
+</template>
