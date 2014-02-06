@@ -38,7 +38,8 @@ int AEDebugger_InitModule(AEEngine *enginePtr, const void **dPtr)
 			AEError("Ambience Engine Debugger was not properly registered before calling InitModule: data pointer has NULL data.");
 		} else {
 			// Load a font from a data URL or something internal for the debugger, so its ALWAYS available.
-			// Rocket::Core::FontDatabase::LoadFontFace(Rocket::Core::String("FILE://Fonts/Acknowledgement.otf"));
+			Rocket::Core::FontDatabase::LoadFontFace(Rocket::Core::String("FILE://AEDebugger/Fonts/newscycle-regular.ttf"));
+			Rocket::Core::FontDatabase::LoadFontFace(Rocket::Core::String("FILE://AEDebugger/Fonts/newscycle-bold.ttf"));
 		}
 	} else {
 		AEError("Ambience Engine Debugger was not properly registered before calling InitModule: data pointer is NULL.");
