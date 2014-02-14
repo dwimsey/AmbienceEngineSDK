@@ -2,22 +2,34 @@
 	<head>
 		<link type="text/rcss" href="AEDebugger.rcss"/>
 		<style>
-div.console {
-	background-color: blue;
-	border-bottom-width: 2px;
-	border-bottom-color: red;
-}
 body.console {
-	 width: 100%;
-	 height: 5em;
+	width: 100%;
+    color: #FFFFFFFF;
+    font-weight: bold;
+}
+div.console {
+    position: absolute;
+    background-color: #00000055;
+	border-width: 1px;
+	border-top-width: 0px;
+	border-color: #FFFFFF55;
+}
+textarea#logoutput {
+    height: 5em;
+	width: 100%;
+}
+input#consoleinput {
+	width: 100%;
+    height: 1.83em;
 }
 		</style>
 	</head>
 	<body class="console">
 		<div id="window">
 			<div class="console">
-				<form id="consoleinput">
-					<textarea name="logoutput" id="logoutput" enabled="false">asdf</textarea>
+				<form id="consoleform">
+					<textarea name="logoutput" id="logoutput" enabled="false" disabled="true">Ambience Engine Debugger Initializing ...</textarea><br/>
+                    <input name="consoleinput" id="consoleinput" type="text" value="Wwhaaat?" />
 				</form>
 			</div>
 		</div>
