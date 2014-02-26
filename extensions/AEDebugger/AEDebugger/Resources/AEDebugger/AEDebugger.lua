@@ -55,7 +55,9 @@ function DebuggerInit(forceDebuggerEnabled)
         print "AEDebugger: Attached."
     end
 
-    self = nil
+	AEDebuggerRocketConsole:Hide()
+
+	self = nil
 end
 
 DebuggerInit()
