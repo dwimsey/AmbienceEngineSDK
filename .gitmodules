@@ -1,0 +1,16 @@
+[submodule "AmbienceEngine"]
+	path = AmbienceEngine
+	url = https://git.wimsey.us/scm/ae/ambienceengine.git
+	branch = master
+[submodule "AEPlayerApp"]
+	path = AEPlayerApp
+	url = https://git.wimsey.us/scm/ae/aeplayerapp.git
+	branch = master
+[submodule "iAEPlayer"]
+	path = iAEPlayer
+	url = https://git.wimsey.us/scm/ae/iaeplayerapp.git
+	branch = master
+[submodule "AEExtensionStub"]
+	path = AEExtensionStub
+	url = https://git.wimsey.us/scm/ci/cosmicimpact.git
+	branch = master
